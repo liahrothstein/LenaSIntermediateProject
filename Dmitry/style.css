@@ -1,0 +1,64 @@
+@font-face {
+    font-family: Parangon530C;
+    src: url(./fonts/Parangon530C.otf);
+}
+body{
+    margin: 0;
+}
+
+/* First Screen */
+
+div.firstScreen{
+    height: 810px;
+    background: url(./firstScreen/background.png) no-repeat;
+}
+div.firstScreen div.container{
+    height: 610px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.firstScreen div.container div.heading{
+    margin-top: 200px;
+    font-family: Parangon530C;
+    color: white;
+    text-align: center;
+    font-size: 46px;
+}
+div.firstScreen div.container div.text{
+    margin-top: 50px;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 27px;
+}
+div.firstScreen div.container div.legends{
+    width: 58.27vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+div.firstScreen div.container div.legends fieldset.item{
+    height: 160px;
+    margin: 0;
+    width: 15.67vw;
+    padding-top: 17px;
+}
+div.firstScreen div.container div.legends fieldset.item legend{
+    text-align: center;
+    padding: 0 0.5vw;
+}
+div.firstScreen div.container div.legends fieldset.item div.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+div.firstScreen div.container div.legends fieldset.item div.content div.number{
+    font-family: Parangon530C;
+    font-size: 50px;
+}
+div.firstScreen div.container div.legends fieldset.item div.content div.string{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 19px;
+}
