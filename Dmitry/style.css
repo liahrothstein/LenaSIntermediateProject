@@ -2,6 +2,10 @@
     font-family: Parangon530C;
     src: url(./fonts/Parangon530C.otf);
 }
+@font-face {
+    font-family: Futura-Normal;
+    src: url(./fonts/Futura-Normal.ttf);
+}
 body{
     margin: 0;
 }
@@ -9,7 +13,7 @@ body{
 /* First Screen */
 
 div.firstScreen{
-    height: 810px;
+    height: 806px;
     background: url(./firstScreen/background.png) no-repeat;
 }
 div.firstScreen div.container{
@@ -61,4 +65,24 @@ div.firstScreen div.container div.legends fieldset.item div.content div.number{
 div.firstScreen div.container div.legends fieldset.item div.content div.string{
     font-family: 'PT Sans', sans-serif;
     font-size: 19px;
+}
+
+/* Menu */
+
+div.menu{
+    height: 100px;
+    margin-right: 8.6vw;
+    margin-left: 41.6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.menu a{
+    font-family: Futura-Normal;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+div.menu a:hover{
+    color: #f6ae48;
 }
