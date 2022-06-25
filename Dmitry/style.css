@@ -6,6 +6,14 @@
     font-family: Futura-Normal;
     src: url(./fonts/Futura-Normal.ttf);
 }
+@font-face {
+    font-family: Helvetica-Neue;
+    src: url(./fonts/Helvetica-Neue.ttf);
+}
+@font-face {
+    font-family: Myriad-Pro;
+    src: url(./fonts/Myriad-Pro.ttf);
+}
 body{
     margin: 0;
 }
@@ -76,6 +84,7 @@ div.menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 div.menu a{
     font-family: Futura-Normal;
@@ -85,4 +94,97 @@ div.menu a{
 }
 div.menu a:hover{
     color: #f6ae48;
+}
+
+/* Studio */
+
+div.studio{
+    border-top: 2px solid #adadad;
+    height: 1118px;
+}
+div.studio div.main{
+    height: 524px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: url(./studio/background.png) no-repeat center;
+}
+div.studio div.main div.header{
+    margin-left: 8.4vw;
+    font-family: Helvetica-Neue;
+    font-size: 45px;
+}
+div.studio div.main div.text{
+    margin-right: 14vw;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 23px;
+}
+div.studio div.threeBase{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 8.4vw;
+    margin-top: 20px;
+}
+div.studio div.threeBase div.base{
+    height: 344px;
+    width: 26.67vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.53vw;
+    padding-top: 20px;
+}
+div.studio div.threeBase div.base:first-child{
+    background: url(./studio/rocket.png) no-repeat 6% 5%;
+}
+div.studio div.threeBase div.base:first-child + div.base{
+    background: url(./studio/mobile.png) no-repeat 6% 5%;
+}
+div.studio div.threeBase div.base:last-child{
+    background: url(./studio/lifeline.png) no-repeat 6% 5%;
+}
+div.studio div.threeBase div.base:first-child:hover{
+    background: url(./studio/rocketHover.png) no-repeat 6% 5% #f6ae48;
+    color: white;
+}
+div.studio div.threeBase div.base:first-child + div.base:hover{
+    background: url(./studio/mobileHover.png) no-repeat 6% 5% #f6ae48;
+    color: white;
+}
+div.studio div.threeBase div.base:last-child:hover{
+    background: url(./studio/lifelineHover.png) no-repeat 6% 5% #f6ae48;
+    color: white;
+}
+div.studio div.threeBase div.base div.header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+div.studio div.threeBase div.base div.text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 18px;
+}
+div.studio div.threeBase div.base div.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+div.studio div.threeBase div.base div.buttons button{
+    height: 36px;
+    width: 8.67vw;
+    border: white solid 2px;
+    background-color: #00000000;
+    color: white;
+    font-family: Myriad-Pro;
+    font-size: 18px;
+}
+div.studio div.threeBase div.base div.buttons img{
+    height: 22px;
+    width: 22px;
+}
+div.studio div.threeBase div.base div.buttons img:hover,
+div.studio div.threeBase div.base div.buttons button{
+    cursor: pointer;
 }
