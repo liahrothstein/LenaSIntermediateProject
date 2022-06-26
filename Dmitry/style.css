@@ -332,3 +332,40 @@ div.dev div.threeBase div.base:first-child + div.base div.buttons img:hover{
 div.dev div.threeBase div.base:last-child div.buttons img:hover{
     content: url(./dev/rightArrowHover3.png);
 }
+
+/* First in the Search */
+
+div.firstInTheSearch{
+    height: 671px;
+    background: url(./firstInTheSearch/background.png) no-repeat 173% -17px;
+    padding: 0 22.6vw 0 13.33vw;
+    display: flex;
+    justify-content: space-between;
+}
+div.firstInTheSearch div.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.firstInTheSearch div.main div.header{
+    margin-top: 130px;
+    font-family: Parangon530C;
+    font-size: 39px;
+}
+div.firstInTheSearch div.main div.text{
+    margin-bottom: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    line-height: 45px;
+}
+div.firstInTheSearch div.partners{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.firstInTheSearch div.partners img:first-child{
+    margin-top: 88px;
+}
+div.firstInTheSearch div.partners img:last-child{
+    margin-bottom: 115px;
+}
