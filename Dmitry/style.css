@@ -373,7 +373,7 @@ div.firstInTheSearch div.partners img:last-child{
 /* Portfolio */
 
 div.portfolio{
-    height: 988px;
+    height: 1009px;
 }
 div.portfolio div.header{
     height: 120px;
@@ -393,6 +393,7 @@ div.portfolio div.row1{
 }
 div.portfolio div.row2{
     display: flex;
+    justify-content: center;
     overflow: hidden;
 }
 div.portfolio div.footer{
@@ -412,4 +413,33 @@ div.portfolio div.footer button{
     font-family: Parangon530C;
     font-size: 22px;
     cursor: pointer;
+}
+
+/* Adaptability */
+
+div.adaptability{
+    height: 768px;
+    padding-left: 13.4vw;
+    background: url(./adaptability/background.png);
+    display: flex;
+    justify-content: space-between;
+}
+div.adaptability div.gadgets{
+    width: 50vw;
+    background: url(./adaptability/gadgets.png);
+}
+div.adaptability div.main{
+    display: flex;
+    flex-direction: column;
+}
+div.adaptability div.main div.header{
+    margin-top: 218px;
+    font-family: Parangon530C;
+    font-size: 42px;
+}
+div.adaptability div.main div.text{
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 45px;
 }
