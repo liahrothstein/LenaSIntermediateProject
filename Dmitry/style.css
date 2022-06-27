@@ -369,3 +369,47 @@ div.firstInTheSearch div.partners img:first-child{
 div.firstInTheSearch div.partners img:last-child{
     margin-bottom: 115px;
 }
+
+/* Portfolio */
+
+div.portfolio{
+    height: 988px;
+}
+div.portfolio div.header{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./portfolio/background.png) no-repeat;
+}
+div.portfolio div.header div{
+    color: white;
+    font-family: Parangon530C;
+    font-size: 34px;
+}
+div.portfolio div.row1{
+    display: flex;
+    overflow: hidden;
+}
+div.portfolio div.row2{
+    display: flex;
+    overflow: hidden;
+}
+div.portfolio div.footer{
+    height: 120px;
+    background-color: #303263;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.portfolio div.footer button{
+    color: white;
+    border: none;
+    border-radius: 17px;
+    background-color: #6a6b8e;
+    height: 66px;
+    width: 16vw;
+    font-family: Parangon530C;
+    font-size: 22px;
+    cursor: pointer;
+}
