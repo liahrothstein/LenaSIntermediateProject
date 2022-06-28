@@ -498,3 +498,34 @@ div.trade-in div.button button{
 div.trade-in div.button button:hover{
     background-color: #00b9e7;
 }
+
+/* Care of Everyone */
+
+div.careOfEveryone{
+    background: url(./careOfEveryone/background.png) no-repeat;
+}
+div.careOfEveryone div.container{
+    height: 760px;
+    padding-left: 13.4vw;
+    display: flex;
+    justify-content: space-between;
+}
+div.careOfEveryone div.container div.gadgets{
+    background: url(./careOfEveryone/gadgets.png) no-repeat 0% 50%;
+    width: 50vw;
+}
+div.careOfEveryone div.container div.main{
+    display: flex;
+    flex-direction: column;
+}
+div.careOfEveryone div.container div.main div.header{
+    margin-top: 218px;
+    font-family: Parangon530C;
+    font-size: 42px;
+}
+div.careOfEveryone div.container div.main div.text{
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 45px;
+}
