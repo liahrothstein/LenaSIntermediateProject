@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <div class="firstScreen">
+        <div class="firstScreen" id="firstScreen">
             <div class="container">
                 <div class="heading">НАШИ САЙТЫ ЗАСТАВЛЯЮТ РАБОТАТЬ<br>ВАШ БИЗНЕС.</div>
                 <div class="text">Большинство веб-студий считают окончанием работы загрузку<br> 
@@ -43,13 +43,13 @@
             </div>
         </div>
         <div class="menu">
-            <a href="#">Главная</a>
-            <a href="#">О нас</a>
-            <a href="#">Услуги</a>
-            <a href="#">Наши работы</a>
-            <a href="#">Контакты</a>
+            <a href="#firstScreen">Главная</a>
+            <a href="#studio">О нас</a>
+            <a href="#dev">Услуги</a>
+            <a href="#portfolio">Наши работы</a>
+            <a href="#contacts">Контакты</a>
         </div>
-        <div class="studio">
+        <div class="studio" id="studio">
             <div class="main">
                 <div class="header">Студия</div>
                 <div class="text">
@@ -103,7 +103,7 @@
                 </div>
             </div>
         </div>
-        <div class="dev">
+        <div class="dev" id="dev">
             <div class="main">
                 <div class="header">КРЕДО НАШЕЙ КОМАПАНИИ</div>
                 <div class="text">
@@ -142,23 +142,25 @@
             </div>
         </div>
         <div class="firstInTheSearch">
-            <div class="main">
-                <div class="header">ПЕРВЫЕ В ПОИСКЕ</div>
-                <div class="text">
-                    Мы предлагаем услуги по SEO продвижению<br> 
-                    сайтов в ведущих поисковых системах Yandex<br> 
-                    и Google. Поисковое продвижение сайта в<br> 
-                    нашей веб-студии — это гарантированное<br> 
-                    присутствие на лидирующих позициях и<br> 
-                    привлечение необходимой аудитории.<br>
+            <div class="container">
+                <div class="main">
+                    <div class="header">ПЕРВЫЕ В ПОИСКЕ</div>
+                    <div class="text">
+                        Мы предлагаем услуги по SEO продвижению<br> 
+                        сайтов в ведущих поисковых системах Yandex<br> 
+                        и Google. Поисковое продвижение сайта в<br> 
+                        нашей веб-студии — это гарантированное<br> 
+                        присутствие на лидирующих позициях и<br> 
+                        привлечение необходимой аудитории.<br>
+                    </div>
+                </div>
+                <div class="partners">
+                    <img src="./firstInTheSearch/google.png" alt="Google Partner">
+                    <img src="./firstInTheSearch/yandex.png" alt="Yandex Partner">
                 </div>
             </div>
-            <div class="partners">
-                <img src="./firstInTheSearch/google.png" alt="Google Partner">
-                <img src="./firstInTheSearch/yandex.png" alt="Yandex Partner">
-            </div>
         </div>
-        <div class="portfolio">
+        <div class="portfolio" id="portfolio">
             <div class="header">
                 <div>ПОСЛЕДНИЕ ПРОЕКТЫ</div>
             </div>
@@ -261,10 +263,35 @@
                         ведению сайта, обновим контент и настроим<br>
                         продвижение в любой момент. Каждая деталь<br>
                         вашего бизнеса является состовляющим звеном<br>
-                        нашей студии. И мы позаботимся о вас.<br>
+                        нашей студии. И мы позаботимся о вас.
                     </div>
                 </div>
                 <div class="gadgets"></div>
+            </div>
+        </div>
+        <div class="contacts" id="contacts">
+            <div class="container">
+                <div class="main">
+                    <div class="header">СВЯЖИТЕСЬ С НАМИ</div>
+                    <div class="text">
+                        Готовы начать работу? Отправьте<br>
+                        сообщение и свои контакты, мы<br>
+                        ответим вам в течении 2-ух дней.<br>
+                        Схема работы с каждым клиентом<br>
+                        будет разработана индивидуально<br> 
+                        в зависимости от поставленных задач.
+                    </div>
+                </div>
+                <form action="" class="form">
+                    <input type="text" placeholder="Ваше имя" class="firstName">
+                    <input type="text" placeholder="Ваша фамилия" class="lastName">
+                    <input type="email" name="" id="" placeholder="E-mail">
+                    <input type="text" placeholder="Введите ваше сообщение" class="message">
+                    <div class="submit">
+                        <div class="notice">Наши специалисты свяжутся с вами как можно скорее</div>
+                        <input type="submit" value="ОТПРАВИТЬ">
+                    </div>
+                </form>
             </div>
         </div>
     </body>
