@@ -30,7 +30,8 @@ body{
 
 div.firstScreen{
     height: 806px;
-    background: url(./firstScreen/background.png) no-repeat #f6ae48;
+    background: url(./firstScreen/background.png) no-repeat;
+    background-size: cover;
 }
 div.firstScreen div.container{
     height: 610px;
@@ -206,7 +207,8 @@ div.dev{
 }
 div.dev div.main{
     height: 565px;
-    background: url(./dev/background.png) no-repeat #f6ae48;
+    background: url(./dev/background.png) no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -257,16 +259,19 @@ div.dev div.threeBase div.base{
 div.dev div.threeBase div.base:first-child{
     margin-left: 12.4vw;
     background: url(./dev/bestOffer1.png) no-repeat;
+    background-size: contain;
     font-family: Futura-Normal;
     font-weight: bold;
 }
 div.dev div.threeBase div.base:first-child + div.base{
     background: url(./dev/bestOffer2.png) no-repeat;
+    background-size: contain;
     font-family: Exo-2;
 }
 div.dev div.threeBase div.base:last-child{
     margin-right: 12.4vw;
     background: url(./dev/bestOffer3.png) no-repeat;
+    background-size: contain;
     font-family: Exo-2;
 }
 div.dev div.threeBase div.base:first-child:hover{
@@ -383,6 +388,7 @@ div.portfolio div.header{
     justify-content: center;
     align-items: center;
     background: url(./portfolio/background.png) no-repeat;
+    background-size: cover;
 }
 div.portfolio div.header div{
     color: white;
@@ -429,6 +435,7 @@ div.adaptability{
 div.adaptability div.gadgets{
     width: 50vw;
     background: url(./adaptability/gadgets.png) no-repeat;
+    background-size: cover;
 }
 div.adaptability div.main{
     display: flex;
@@ -449,7 +456,8 @@ div.adaptability div.main div.text{
 /* Trade-In */
 
 div.trade-in{
-    background: url(./trade-in/background.png) no-repeat #f6ae48;
+    background: url(./trade-in/background.png) no-repeat;
+    background-size: cover;
     color: white;
 }
 div.trade-in div.header{
@@ -535,7 +543,8 @@ div.careOfEveryone div.container div.main div.text{
 /* Contacts */
 
 div.contacts{
-    background: url(./contacts/background.png) no-repeat #f6ae48;
+    background: url(./contacts/background.png) no-repeat;
+    background-size: cover;
     color: white;
     height: 674px;
 }
