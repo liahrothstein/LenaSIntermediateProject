@@ -1,0 +1,628 @@
+@font-face {
+    font-family: Parangon530C;
+    src: url(./fonts/Parangon530C.otf);
+}
+@font-face {
+    font-family: Futura-Normal;
+    src: url(./fonts/Futura-Normal.ttf);
+}
+@font-face {
+    font-family: Helvetica-Neue;
+    src: url(./fonts/Helvetica-Neue.ttf);
+}
+@font-face {
+    font-family: Myriad-Pro;
+    src: url(./fonts/Myriad-Pro.ttf);
+}
+@font-face {
+    font-family: Exo-2;
+    src: url(./fonts/Exo-2.ttf);
+}
+@font-face {
+    font-family: Helvetica-NeueRoman;
+    src: url(./fonts/Helvetica-NeueRoman.ttf);
+}
+body{
+    margin: 0;
+}
+
+/* First Screen */
+
+div.firstScreen{
+    height: 806px;
+    background: url(./firstScreen/background.png) no-repeat;
+    background-size: cover;
+}
+div.firstScreen div.container{
+    height: 610px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.firstScreen div.container div.heading{
+    margin-top: 200px;
+    font-family: Parangon530C;
+    color: white;
+    text-align: center;
+    font-size: 46px;
+}
+div.firstScreen div.container div.text{
+    margin-top: 50px;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 27px;
+}
+div.firstScreen div.container div.legends{
+    width: 58.27vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+div.firstScreen div.container div.legends fieldset.item{
+    height: 160px;
+    margin: 0;
+    width: 15.67vw;
+    padding-top: 17px;
+}
+div.firstScreen div.container div.legends fieldset.item legend{
+    text-align: center;
+    padding: 0 0.5vw;
+}
+div.firstScreen div.container div.legends fieldset.item div.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+div.firstScreen div.container div.legends fieldset.item div.content div.number{
+    font-family: Parangon530C;
+    font-size: 50px;
+}
+div.firstScreen div.container div.legends fieldset.item div.content div.string{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 19px;
+}
+
+/* Menu */
+
+div.menu{
+    height: 100px;
+    margin-right: 8.6vw;
+    margin-left: 41.6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+div.menu a{
+    font-family: Futura-Normal;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+div.menu a:hover{
+    color: #f6ae48;
+}
+
+/* Studio */
+
+div.studio{
+    border-top: 2px solid #adadad;
+}
+div.studio div.main{
+    height: 524px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: url(./studio/background.png) no-repeat center;
+}
+div.studio div.main div.header{
+    margin-left: 8.4vw;
+    font-family: Helvetica-Neue;
+    font-size: 45px;
+}
+div.studio div.main div.text{
+    margin-right: 14vw;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 23px;
+}
+div.studio div.threeBase{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 8.4vw;
+    margin-top: 20px;
+    padding-bottom: 210px;
+}
+div.studio div.threeBase div.base{
+    height: 344px;
+    width: 26.67vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.53vw;
+    padding-top: 20px;
+}
+div.studio div.threeBase div.base:first-child{
+    background: url(./studio/rocket.png) no-repeat 6% 5%;
+}
+div.studio div.threeBase div.base:first-child + div.base{
+    background: url(./studio/mobile.png) no-repeat 6% 5%;
+}
+div.studio div.threeBase div.base:last-child{
+    background: url(./studio/lifeline.png) no-repeat 6% 5%;
+}
+div.studio div.threeBase div.base:first-child:hover{
+    background: url(./studio/rocketHover.png) no-repeat 6% 5% #f6ae48;
+    color: white;
+}
+div.studio div.threeBase div.base:first-child + div.base:hover{
+    background: url(./studio/mobileHover.png) no-repeat 6% 5% #f6ae48;
+    color: white;
+}
+div.studio div.threeBase div.base:last-child:hover{
+    background: url(./studio/lifelineHover.png) no-repeat 6% 5% #f6ae48;
+    color: white;
+}
+div.studio div.threeBase div.base div.header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+div.studio div.threeBase div.base div.text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 18px;
+}
+div.studio div.threeBase div.base div.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+div.studio div.threeBase div.base div.buttons button{
+    height: 36px;
+    width: 8.67vw;
+    border: white solid 2px;
+    background-color: #00000000;
+    color: white;
+    font-family: Myriad-Pro;
+    font-size: 18px;
+}
+div.studio div.threeBase div.base div.buttons img{
+    height: 22px;
+    width: 22px;
+}
+div.studio div.threeBase div.base div.buttons img:hover,
+div.studio div.threeBase div.base div.buttons button{
+    cursor: pointer;
+}
+
+/* Development */
+
+div.dev{
+    height: 1181px;
+    color: white;
+    position: relative;
+}
+div.dev div.main{
+    height: 565px;
+    background: url(./dev/background.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+div.dev div.main div.header{
+    margin-top: 130px;
+    font-family: Exo-2;
+    font-size: 47px;
+}
+div.dev div.main div.text{
+    margin-bottom: 152px;
+    text-align: center;
+    font-family: Helvetica-NeueRoman;
+    font-size: 24px;
+    line-height: 37px;
+}
+div.dev div.yellowRectangle{
+    height: 526px;
+    width: 44.4vw;
+    background: url(./dev/yellowRectangle.png) no-repeat;
+    position: absolute;
+    left: 0;
+    top: 520px;
+    z-index: 2;
+}
+div.dev div.yellowRectangle div.text{
+    margin-top: 132px;
+    font-family: Parangon530C;
+    position: relative;
+    left: 8.4vw;
+    font-size: 54px;
+}
+div.dev div.threeBase{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 774px;
+    z-index: 3;
+}
+div.dev div.threeBase div.base{
+    display: flex;
+    flex-direction: column;
+    height: 369px;
+    width: 24.4vw;
+}
+div.dev div.threeBase div.base:first-child{
+    margin-left: 12.4vw;
+    background: url(./dev/bestOffer1.png) no-repeat;
+    background-size: contain;
+    font-family: Futura-Normal;
+    font-weight: bold;
+}
+div.dev div.threeBase div.base:first-child + div.base{
+    background: url(./dev/bestOffer2.png) no-repeat;
+    background-size: contain;
+    font-family: Exo-2;
+}
+div.dev div.threeBase div.base:last-child{
+    margin-right: 12.4vw;
+    background: url(./dev/bestOffer3.png) no-repeat;
+    background-size: contain;
+    font-family: Exo-2;
+}
+div.dev div.threeBase div.base:first-child:hover{
+    background-color: #00b9e7;
+}
+div.dev div.threeBase div.base:first-child + div.base:hover{
+    background-color: #ffcb00;
+}
+div.dev div.threeBase div.base:last-child:hover{
+    background-color: #66bf0d;
+}
+div.dev div.threeBase div.base div.header[class="header"]{
+    margin-top: 74px;
+    padding-bottom: 20px;
+    border-bottom: white solid 1px;
+    font-size: 45px;
+}
+div.dev div.threeBase div.base:first-child + div.base div.header[class="header"]{
+    padding-bottom: 60px;
+}
+div.dev div.threeBase div.base:last-child div.header[class="header"]{
+    padding-bottom: 7px;
+}
+div.dev div.threeBase div.base div.header,
+div.dev div.threeBase div.base div.buttons{
+    margin: 0 2.33vw;
+}
+div.dev div.threeBase div.base div.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 46px;
+}
+div.dev div.threeBase div.base div.buttons button{
+    height: 53px;
+    width: 13.2vw;
+    color: white;
+    background-color: #00000000;
+    font-family: Myriad-Pro;
+    font-size: 22px;
+    cursor: pointer;
+}
+div.dev div.threeBase div.base:first-child div.buttons button{
+    border: #00b9e7 solid 2px;
+}
+div.dev div.threeBase div.base:first-child + div.base div.buttons button{
+    border: #ffcb00 solid 2px;
+}
+div.dev div.threeBase div.base:last-child div.buttons button{
+    border: #66bf0d solid 2px;
+}
+div.dev div.threeBase div.base div.buttons img{
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+}
+div.dev div.threeBase div.base:first-child div.buttons img:hover{
+    content: url(./dev/rightArrowHover1.png);
+}
+div.dev div.threeBase div.base:first-child + div.base div.buttons img:hover{
+    content: url(./dev/rightArrowHover2.png);
+}
+div.dev div.threeBase div.base:last-child div.buttons img:hover{
+    content: url(./dev/rightArrowHover3.png);
+}
+
+/* First in the Search */
+
+div.firstInTheSearch{
+    background: url(./firstInTheSearch/background.png) no-repeat 173% -17px;
+    padding: 0 22.6vw 0 13.33vw;
+}
+div.firstInTheSearch div.container{
+    height: 671px;
+    display: flex;
+    justify-content: space-between;
+}
+div.firstInTheSearch div.container div.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.firstInTheSearch div.container div.main div.header{
+    margin-top: 130px;
+    font-family: Parangon530C;
+    font-size: 39px;
+}
+div.firstInTheSearch div.container div.main div.text{
+    margin-bottom: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    line-height: 45px;
+}
+div.firstInTheSearch div.container div.partners{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.firstInTheSearch div.container div.partners img:first-child{
+    margin-top: 88px;
+}
+div.firstInTheSearch div.container div.partners img:last-child{
+    margin-bottom: 115px;
+}
+
+/* Portfolio */
+
+div.portfolio{
+    height: 1009px;
+}
+div.portfolio div.header{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./portfolio/background.png) no-repeat;
+    background-size: cover;
+}
+div.portfolio div.header div{
+    color: white;
+    font-family: Parangon530C;
+    font-size: 34px;
+}
+div.portfolio div.row1{
+    display: flex;
+    overflow: hidden;
+}
+div.portfolio div.row2{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+div.portfolio div.footer{
+    height: 120px;
+    background-color: #303263;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.portfolio div.footer button{
+    color: white;
+    border: none;
+    border-radius: 17px;
+    background-color: #6a6b8e;
+    height: 66px;
+    width: 16vw;
+    font-family: Parangon530C;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Adaptability */
+
+div.adaptability{
+    height: 768px;
+    padding-left: 13.4vw;
+    background: url(./adaptability/background.png) no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+div.adaptability div.gadgets{
+    width: 50vw;
+    background: url(./adaptability/gadgets.png) no-repeat;
+    background-size: cover;
+}
+div.adaptability div.main{
+    display: flex;
+    flex-direction: column;
+}
+div.adaptability div.main div.header{
+    margin-top: 218px;
+    font-family: Parangon530C;
+    font-size: 42px;
+}
+div.adaptability div.main div.text{
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 45px;
+}
+
+/* Trade-In */
+
+div.trade-in{
+    background: url(./trade-in/background.png) no-repeat;
+    background-size: cover;
+    color: white;
+}
+div.trade-in div.header{
+    margin: 0 0 75px;
+    padding-top: 63px;
+    font-family: Parangon530C;
+    font-size: 38px;
+    text-align: center;
+}
+div.trade-in div.blocks{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3.27vw 0 6.13vw;
+}
+div.trade-in div.blocks div.block div.name{
+    display: flex;
+    align-items: center;
+}
+div.trade-in div.blocks div.block div.name:first-child div.text:last-child{
+    margin-left: 1vw;
+    margin-top: 0;
+    font-family: Parangon530C;
+    font-size: 26px;
+}
+div.trade-in div.blocks div.block div.text{
+    margin-top: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 27px;
+    font-size: 18px;
+}
+div.trade-in div.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 51px;
+}
+div.trade-in div.button button{
+    width: 22.2vw;
+    height: 67px;
+    border: none;
+    border-radius: 17px;
+    background-color: #f6ae48;
+    color: white;
+    font-family: Parangon530C;
+    font-size: 24px;
+    cursor: pointer;
+}
+div.trade-in div.button button:hover{
+    background-color: #00b9e7;
+}
+
+/* Care of Everyone */
+
+div.careOfEveryone{
+    background: url(./careOfEveryone/background.png) no-repeat;
+}
+div.careOfEveryone div.container{
+    height: 760px;
+    padding-left: 13.4vw;
+    display: flex;
+    justify-content: space-between;
+}
+div.careOfEveryone div.container div.gadgets{
+    background: url(./careOfEveryone/gadgets.png) no-repeat 0% 50%;
+    width: 50vw;
+}
+div.careOfEveryone div.container div.main{
+    display: flex;
+    flex-direction: column;
+}
+div.careOfEveryone div.container div.main div.header{
+    margin-top: 218px;
+    font-family: Parangon530C;
+    font-size: 42px;
+}
+div.careOfEveryone div.container div.main div.text{
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 45px;
+}
+
+/* Contacts */
+
+div.contacts{
+    background: url(./contacts/background.png) no-repeat;
+    background-size: cover;
+    color: white;
+    height: 674px;
+}
+div.contacts div.container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 127px;
+    margin: 0 10.27vw 0 11.73vw;
+}
+div.contacts div.container form.form{
+    display: grid;
+    grid-template-columns: repeat(2, 20vw);
+    grid-template-rows: repeat(2, 40px) 160px 60px;
+}
+div.contacts div.container form.form input.firstName{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-bottom: none;
+}
+div.contacts div.container form.form input.lastName{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border-bottom: none;
+    border-left: none;
+}
+div.contacts div.container form.form input[type="email"]{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    border-bottom: none;
+}
+div.contacts div.container form.form input.message{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+div.contacts div.container form.form input{
+    background: none;
+    border: 4px solid white;
+    color: white;
+    padding: 0 1.2vw;
+    font-size: 16px;
+    cursor: pointer;
+}
+div.contacts div.container form.form input::-webkit-input-placeholder{
+    color: white;
+}
+div.contacts div.container form.form div.submit{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+div.contacts div.container form.form div.submit input[type="submit"]{
+    height: 45px;
+    width: 9.73vw;
+    background-color: #f6ae48;
+    border: none;
+    border-radius: 17px;
+    font-family: Parangon530C;
+    font-size: 14px;
+}
+div.contacts div.container form.form div.submit div.notice{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 32px;
+    padding-left: 1.2vw;
+    font-size: 14px;
+}
+div.contacts div.container div.main{
+    display: flex;
+    flex-direction: column;
+}
+div.contacts div.container div.main div.header{
+    font-family: Parangon530C;
+    font-size: 33px;
+}
+div.contacts div.container div.main div.text{
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
